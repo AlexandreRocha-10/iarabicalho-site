@@ -14,16 +14,16 @@ function Popup({ open, onClose }: PopupProps) {
       <div className="bg-white/10 rounded-lg p-6 max-w-md mx-auto" onClick={(e) => e.stopPropagation()}>
         <img src={sonho} alt="sonho" className="mx-auto mb-4 rounded-lg" />
         <div className="text-center">
-          <p className="text-lg font-semibold">"Sonho" está disponível em todas as plataformas digitais.</p>
+          <p className="text-lg font-semibold text-gray-200">"Sonho" está disponível em todas as plataformas digitais.</p>
           <span className="mt-2 flex justify-center">
             <a href="https://open.spotify.com/intl-pt/artist/0MDMFoY2RXR6J3xD5F4KCs" target="_blank" rel="noopener noreferrer" className="mr-3">
-              <FaSpotify className="text-2xl text-green-500 hover:text-green-600 transition" />
+              <FaSpotify className="text-3xl text-green-500 hover:text-green-600 transition" />
             </a>
             <a href="https://www.deezer.com/br/artist/183519917" target="_blank" rel="noopener noreferrer" className="mr-3">
-              <FaDeezer className="text-2xl text-blue-500 hover:text-blue-600 transition" />
+              <FaDeezer className="text-3xl text-blue-500 hover:text-blue-600 transition" />
             </a>
             <a href="https://www.youtube.com/@iarabicalhocantora" target="_blank" rel="noopener noreferrer">
-              <FaYoutube className="text-2xl text-red-500 hover:text-red-600 transition" />
+              <FaYoutube className="text-3xl text-red-500 hover:text-red-600 transition" />
             </a>
           </span>
         </div>
