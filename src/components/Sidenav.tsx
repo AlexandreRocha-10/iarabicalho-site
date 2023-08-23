@@ -4,11 +4,11 @@ import { BsHouseDoor, BsInfoCircle, BsCalendar, BsImage, BsNewspaper, BsDisc, Bs
 import MenuItem from "./MenuItem";
 
 const iconMapping: { [key: string]: React.ComponentType<{ size: number, className: string }> } = {
-    Início: BsHouseDoor,
+    Inicio: BsHouseDoor,
     Sobre: BsInfoCircle,
     Agenda: BsCalendar,
     Fotos: BsImage,
-    Notícias: BsNewspaper,
+    Noticias: BsNewspaper,
     Discografia: BsDisc,
     Contato: BsEnvelope,
 };

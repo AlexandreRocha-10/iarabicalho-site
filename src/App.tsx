@@ -3,22 +3,22 @@ import Main from "./pages/Main";
 import About from './pages/About';
 import Schedule from './pages/Schedule';
 
+import aboutData from './data/AboutData';
+
 
 
 function App() {
+  const mainRoutes = ['/', '/inicio'];
+
   return (
     <Routes>
-      <Route path="/" element={ <Main /> }/>
-      <Route path="/about" element={ <About /> } />
-      <Route path="/schedule" element={ <Schedule /> } />
-      <Route path="/photos" element={ <About /> } />
-      <Route path="/news" element={ <About /> } />
-      <Route path="/discos" element={ <About /> } />
-      <Route path="/contact" element={ <About /> } />
-      <Route path="/central" element={ <About /> } />
-      <Route path="/store" element={ <About /> } />
+      {mainRoutes.map((path) => (
+        <Route key={path} path={path} element={<Main />} />
+      ))}
+      <Route path="/sobre" element={<About AboutData={aboutData} />} />
+      <Route path="/schedule" element={<Schedule />} />
     </Routes>
-  )
+  );
 }
 
-export default App
+export default App;
