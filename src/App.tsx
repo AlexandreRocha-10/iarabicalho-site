@@ -16,7 +16,7 @@ function App() {
         <Route key={path} path={path} element={<Main />} />
       ))}
       <Route path="/sobre" element={<About AboutData={aboutData} />} />
-      <Route path="/schedule" element={<Schedule />} />
+      <Route path="/agenda" element={<Schedule />} />
     </Routes>
   );
 }
